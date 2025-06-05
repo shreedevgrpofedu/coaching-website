@@ -207,4 +207,39 @@ footer {
 .join-btn:hover {
   background-color: #059669;
 }
+.batch-with-image {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 1.5rem auto 2.5rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.batch-image {
+  width: 140px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.batch-with-image h3 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.batch-with-image ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.batch-with-image ul li {
+  margin-bottom: 0.7rem;
+}
 
