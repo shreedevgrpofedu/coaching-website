@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f9fafb;
+  background-color: #ffdab9;
   color: #1f2937;
   animation: fadeInBody 1s ease;
 }
@@ -24,12 +24,12 @@ header {
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
   margin-right: 1rem;
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 0;
 }
