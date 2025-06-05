@@ -9,20 +9,21 @@
 </head>
 <body>
 
-  <header>
-    <div class="header-left">
-      <img src="logo.png" alt="Smart Coaching Logo" class="logo" />
-      <h1>Smart Coaching Classes</h1>
-    </div>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="#batches">Batches</a>
-      <a href="#about">About Teachers</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#toppers">Toppers</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo-space">LOGO</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#batches">Batches</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#toppers">Toppers</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="https://wa.me/6398714826" class="join-btn">Join Now</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <section class="hero fade-in">
     <h2>Near N.D. Ground, Yaduvansh Nagar, Shikohabad</h2>
@@ -161,6 +162,11 @@
   <footer>
     <p>© 2025 Smart Coaching Classes. All rights reserved.</p>
   </footer>
+<script>
+  function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+  }
+</script>
 
 </body>
 </html>
