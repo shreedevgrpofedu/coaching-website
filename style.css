@@ -3,13 +3,13 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #c6c6c6;
+  background-color: #e7f0ff;
   color: #1f2937;
   animation: fadeInBody 1s ease;
 }
 
 header {
-  background-color: #1e293b;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -46,7 +46,7 @@ nav a:hover {
 }
 
 .hero {
-  background-color: #e0f2fe;
+  background-color: #f0faff;
   padding: 2rem;
   text-align: center;
 }
@@ -74,16 +74,16 @@ nav a:hover {
 .batch {
   max-width: 700px;
   margin: 1rem auto 2rem;
-  background: #f1f5f9;
+  background: #ffffff;
   border-radius: 12px;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .batch h3 {
   margin-top: 0;
   font-weight: 600;
-  color: #2563eb;
+  color: #00a8e8;
 }
 
 .batch ul {
@@ -103,10 +103,10 @@ nav a:hover {
   gap: 2rem;
   max-width: 700px;
   margin: 2rem auto;
-  background: #f9fafb;
+  background: #ffffff;
   border-radius: 12px;
   padding: 1rem 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .teacher-photo {
@@ -136,16 +136,16 @@ nav a:hover {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
-  background: #ddd;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: #eee;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 .topper-card {
-  background: #f1f5f9;
+  background: #ffffff;
   border-radius: 12px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .topper-card p {
@@ -163,7 +163,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #1e293b;
+  background-color: #007bff;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -187,7 +187,7 @@ footer {
 }
 @keyframes fadeInBody {
   from { background-color: #fff; }
-  to { background-color: #f9fafb; }
+  to { background-color: #e7f0ff; }
 }
 
 /* Join Now Button */
@@ -195,7 +195,7 @@ footer {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #ff7373;
+  background-color: #ff4081;
   color: white;
   font-weight: 600;
   border: none;
@@ -205,15 +205,17 @@ footer {
   font-size: 1rem;
 }
 .join-btn:hover {
-  background-color: #e56767;
+  background-color: #e73370;
 }
+
+/* Batches with Image */
 .batch-with-image-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 700px;
   margin: 1.5rem auto 2.5rem;
-  background: #f1f5f9;
+  background: #ffffff;
   border-radius: 12px;
   padding: 1rem 2rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -235,7 +237,7 @@ footer {
 .batch-with-image-right h3 {
   margin-top: 0;
   font-weight: 600;
-  color: #2563eb;
+  color: #00a8e8;
 }
 
 .batch-with-image-right ul {
@@ -248,6 +250,7 @@ footer {
   margin-bottom: 0.7rem;
 }
 
+/* Mobile Nav */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -283,5 +286,6 @@ footer {
     position: relative;
   }
 }
+
 
 
