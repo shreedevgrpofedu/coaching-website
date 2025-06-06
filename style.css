@@ -499,9 +499,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .toppers-2025 {
+    flex-wrap: nowrap !important; /* override wrap */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
   .toppers-2025 .topper-card {
-    flex: 1 1 48%;
-    max-width: 48%;
+    flex: 0 0 70%;
+    max-width: 70%;
+    scroll-snap-align: start;
   }
 }
 
