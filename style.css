@@ -455,14 +455,20 @@ footer {
     width: 70vw;
   }
 }
-.toppers-2025-title h2 {
+.toppers-2025-title {
   width: 100%;
-  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  /* If parent is flex container */
+  flex-basis: 100%; 
+  flex-grow: 0;
+}
+
+.toppers-2025-title h2 {
   display: block;
-  margin: 1rem 0;
-  color: #2563eb;
+  font-size: 1.8rem; /* Increase size if needed */
   font-weight: 600;
-  font-size: 1.8rem;
+  margin: 0;
 }
 
 .toppers-2025-container {
@@ -490,11 +496,15 @@ footer {
   height: auto;
   border-radius: 10px;
   margin-bottom: 0.4rem;
+/* Make topper cards bigger */
+.toppers-2025 .topper-card {
+  width: 22%; /* slightly bigger than before */
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-  .topper-card-small {
-    width: 48%; /* 2 cards per row on mobile */
+  .toppers-2025 .topper-card {
+    width: 48%; /* 2 per row on mobile */
   }
 }
 
