@@ -378,4 +378,38 @@ footer {
   background-color: #1ebe57;
   box-shadow: 0 6px 12px rgba(37, 211, 102, 0.5);
 }
+.gallery {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+  scroll-behavior: smooth;
+  overflow-x: auto;  /* horizontal scroll default */
+  overflow-y: hidden;
+}
+
+.gallery-img {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  object-fit: contain;
+  flex-shrink: 0;  /* prevent shrinking */
+  width: 250px;    /* fixed width on desktop */
+  height: 160px;
+}
+
+/* Mobile: vertical scrolling */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    max-height: 400px;   /* fixed height */
+    overflow-y: auto;    /* vertical scroll */
+    overflow-x: hidden;
+  }
+
+  .gallery-img {
+    width: 100%;        /* full width on mobile */
+    height: auto;       /* auto height */
+  }
+}
 
