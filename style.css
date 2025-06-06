@@ -412,4 +412,15 @@ footer {
     height: auto;       /* auto height */
   }
 }
+.management-line {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #2563eb;  /* vibrant blue */
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+.management-line strong {
+  font-weight: 600;
+}
 
