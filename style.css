@@ -320,5 +320,20 @@ footer {
   transform: scale(1.02);
 }
 
+.yt-btn {
+  display: inline-block;
+  background-color: #ff0000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.yt-btn:hover {
+  background-color: #cc0000;
+}
 
 
