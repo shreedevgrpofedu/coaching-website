@@ -423,22 +423,18 @@ footer {
 .management-line strong {
   font-weight: 600;
 }
-.shorts-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.shorts-section h2 {
-  color: #2563eb;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
 .shorts-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  overflow-x: auto;
   gap: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem; /* for some space below scrollbar */
+}
+
+.short-video {
+  flex: 0 0 auto;
+  width: 220px; /* fixed width for each thumbnail on desktop */
 }
 
 .short-video img {
@@ -453,17 +449,10 @@ footer {
   transform: scale(1.05);
 }
 
-/* Mobile: horizontal scroll */
+/* On mobile, make each thumbnail wider */
 @media (max-width: 768px) {
-  .shorts-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    -webkit-overflow-scrolling: touch;
-  }
   .short-video {
-    flex: 0 0 auto;
-    width: 70vw; /* about 70% of viewport width */
+    width: 70vw;
   }
 }
 
