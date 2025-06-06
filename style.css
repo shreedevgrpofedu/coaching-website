@@ -359,5 +359,24 @@ footer {
 .video-grid a img:hover {
   transform: scale(1.05);
 }
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
+  box-shadow: 0 6px 12px rgba(37, 211, 102, 0.5);
+}
 
 
