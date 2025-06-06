@@ -455,65 +455,66 @@ footer {
     width: 70vw;
   }
 }
-.toppers-2025-section {
-  width: 100%;
-  margin-top: 2rem;
+.toppers-section {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.toppers-2025-title {
-  width: 100%;
+.section-title {
   font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
+/* Container for topper cards */
 .toppers-2025 {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
+  gap: 1rem;
 }
 
+/* Each topper card */
 .toppers-2025 .topper-card {
-  flex: 0 0 16%;
-  max-width: 16%;
+  flex: 0 0 22%;  /* about 4 per row */
+  max-width: 22%;
   box-sizing: border-box;
-  background: #fff;
+  background: #f9f9f9;
+  padding: 1rem;
   border-radius: 8px;
-  padding: 0.8rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .toppers-2025 .topper-card img {
   width: 100%;
   height: auto;
   border-radius: 6px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.toppers-2025 .topper-card p {
-  margin: 0.2rem 0;
-  font-size: 1rem;
-  color: #333;
+/* Hover effect for cards */
+.toppers-2025 .topper-card:hover {
+  transform: translateY(-5px);
 }
 
+/* Mobile: two cards per row, smaller size, horizontal scroll */
 @media (max-width: 768px) {
   .toppers-2025 {
-    flex-wrap: nowrap !important; /* override wrap */
+    flex-wrap: nowrap;
     overflow-x: auto;
+    padding-bottom: 1rem;
     -webkit-overflow-scrolling: touch;
-    padding: 0 1rem;
-    scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    justify-content: flex-start;
   }
 
   .toppers-2025 .topper-card {
     flex: 0 0 45%;
     max-width: 45%;
     scroll-snap-align: start;
-    text-align: center;
   }
 }
-
-
