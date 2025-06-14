@@ -454,7 +454,7 @@ footer {
   .short-video {
     width: 70vw;
   }
-}
+
 .toppers-section {
   padding: 2rem 1rem;
   max-width: 1100px;
@@ -468,17 +468,8 @@ footer {
   font-weight: 700;
 }
 
-.toppers-2025 .topper-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 0.75rem;
-}
 
-/* Hover effect for cards */
-.toppers-2025 .topper-card:hover {
-  transform: translateY(-5px);
-}
+
 /* New Horizontal Topper Slider */
 .toppers-section.slider {
   overflow-x: auto;
@@ -488,10 +479,16 @@ footer {
 
 .toppers-slider {
   display: flex;
+  flex-direction: row;
   gap: 20px;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
   padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .topper-card {
@@ -521,8 +518,5 @@ footer {
 .toppers-slider::-webkit-scrollbar {
   display: none;
 }
-.toppers-slider {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+
 
