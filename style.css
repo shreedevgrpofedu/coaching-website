@@ -468,27 +468,6 @@ footer {
   font-weight: 700;
 }
 
-/* Container for topper cards */
-.toppers-2025 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-/* Each topper card */
-.toppers-2025 .topper-card {
-  flex: 0 0 22%;  /* about 4 per row */
-  max-width: 22%;
-  box-sizing: border-box;
-  background: #f9f9f9;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
 .toppers-2025 .topper-card img {
   width: 100%;
   height: auto;
@@ -500,21 +479,50 @@ footer {
 .toppers-2025 .topper-card:hover {
   transform: translateY(-5px);
 }
-
-/* Mobile: two cards per row, smaller size, horizontal scroll */
-@media (max-width: 768px) {
-  .toppers-2025 {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 1rem;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    justify-content: flex-start;
-  }
-
-  .toppers-2025 .topper-card {
-    flex: 0 0 45%;
-    max-width: 45%;
-    scroll-snap-align: start;
-  }
+/* New Horizontal Topper Slider */
+.toppers-section.slider {
+  overflow-x: auto;
+  padding: 20px 10px;
+  white-space: nowrap;
 }
+
+.toppers-slider {
+  display: flex;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.topper-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-family: 'Poppins', sans-serif;
+}
+
+.topper-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.topper-card .quote {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 8px;
+  font-style: italic;
+}
+.toppers-slider::-webkit-scrollbar {
+  display: none;
+}
+.toppers-slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
