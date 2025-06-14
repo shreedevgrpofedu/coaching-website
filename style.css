@@ -424,18 +424,37 @@ footer {
 .management-line strong {
   font-weight: 600;
 }
+.shorts-section {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shorts-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
 .shorts-container {
   display: flex;
   overflow-x: auto;
   gap: 1rem;
-  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  padding-bottom: 0.5rem; /* for some space below scrollbar */
+  -webkit-overflow-scrolling: touch;
+}
+
+.shorts-container::-webkit-scrollbar {
+  display: none;
 }
 
 .short-video {
   flex: 0 0 auto;
-  width: 220px; /* fixed width for each thumbnail on desktop */
+  width: 220px;
+  scroll-snap-align: start;
 }
 
 .short-video img {
@@ -450,12 +469,12 @@ footer {
   transform: scale(1.05);
 }
 
-/* On mobile, make each thumbnail wider */
 @media (max-width: 768px) {
   .short-video {
     width: 70vw;
   }
 }
+
 .toppers-section {
   padding: 2rem 1rem;
   max-width: 1100px;
