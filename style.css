@@ -469,39 +469,34 @@ footer {
   font-weight: 700;
 }
 
-
-
-/* New Horizontal Topper Slider */
-.toppers-section.slider {
-  overflow-x: auto;
-  padding: 20px 10px;
-  white-space: nowrap;
-}
-
 .toppers-slider {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  scroll-snap-type: x mandatory;
+  flex-wrap: nowrap;
   overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
+  gap: 20px;
   padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+}
+
+.toppers-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .topper-card {
   flex: 0 0 auto;
+  width: 220px;
   scroll-snap-align: start;
   background: #f9f9f9;
   border-radius: 12px;
   padding: 15px;
-  width: 220px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.topper-card:hover {
+  transform: translateY(-5px);
 }
 
 .topper-card img {
@@ -513,11 +508,12 @@ footer {
 .topper-card .quote {
   font-size: 0.85rem;
   color: #444;
-  margin-top: 8px;
   font-style: italic;
-}
-.toppers-slider::-webkit-scrollbar {
-  display: none;
+  margin-top: 8px;
 }
 
-
+@media (max-width: 768px) {
+  .topper-card {
+    width: 70vw;
+  }
+}
