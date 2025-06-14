@@ -448,6 +448,18 @@ footer {
 .short-video img:hover {
   transform: scale(1.05);
 }
+.shorts-section {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shorts-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
 
 /* On mobile, make each thumbnail wider */
 @media (max-width: 768px) {
